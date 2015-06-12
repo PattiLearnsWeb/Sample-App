@@ -70,4 +70,8 @@ class UserTest < ActiveSupport::TestCase
     @user.reload
     assert_equal 'foo@bar.com', @user.email
   end
+
+  test 'authenticated? should return false for a user with nil digest' do
+    assert_not @user.authenticated?(' ')
+  end
 end
