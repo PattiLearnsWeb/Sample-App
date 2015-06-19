@@ -14,4 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#Ignore RubyMine folder
 .idea/
+
+#Ignore uploaded test images.
+/public/uploads
