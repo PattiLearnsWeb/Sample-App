@@ -1,0 +1,6 @@
+<% if current_user.following?(@user) %>
+    <h1>True</h1>
+<% else %>
+    <%= render 'users/follow' %>
+<% end %>
+
